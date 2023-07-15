@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=  , initial-scale=1.0">
+    <title> Personal Protfolio Website </title>
+    <link rel=" stylesheet " href="style.css">
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+    <nav>
+        <img src="logo.png" class="logo">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Servies</a></li>
+           
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div>
+      <div class="left-section">
+        <p>Web Developer</p>
+        <h1>Hi, I'm <span>Shikha</span><br> Jaiswal </h1>
+      </div>
+        <div class="right-section" >
+          <img src="image.png">
+  
+    </div> 
+  </div> 
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="shikha photo.png">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I'm Shikha, a passionate web developer with a strong educational background in computer applications.I hold a Master's in Computer Applications (MCA) froKamla Nehru Institute of Technology (KNIT).Currently I am working at ineuBytes as an Web development intern.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('Education')">Education</p>
+          </div>
+          <div class="tab-content active-tab" id="Skills">    
+            <ul>
+              <li><span>Java Programming</span><br>Android Apps</li>
+              <li><span>Web Design</span><br>Tic Tak Toe game</li>
+              <li><span>DBMS</span><br>Online Shopping Website</li>
+            </ul>
+          </div>
+          <div class="tab-content" id="Experience">    
+            <ul>
+              <li><span> 2023-Current</span><br> Web development intern</li>
+              <li><span>2022-2023</span><br> Java Developer</li>
+              <li><span>2021 - 2022</span><br>C programing</li>
+            </ul>
+          </div>
+          <div class="tab-content" id="Education">    
+            <ul>   
+              <li><span>2022-2024</span><br> MCA form KNIT</li>
+              <li><span>2019-2022</span><br> BSC from MGKVP</li>
+              <li><span>2017-2018</span><br>Inermediate from APSS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <script>
+
+    var tab_links = document.getElementsByClassName("tab-links");
+    var tab_content = document.getElementsByClassName("tab-content");
+
+    function opentab(tabname){
+      for(tablink of tab_links){
+        tablink.classList.remove("active-link");
+     }
+     for(tabcontent of tab_content){
+      tabcontent.classList.remove("active-tab");
+     }
+     event.currentTarget.classList.add("active-link");
+     document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+
+ <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <h2>Weather App</h2>
+          <p>created a weather app project. The objective of this project was to develop a web application that provides weather information for a specified city. The app was created using HTML, CSS, and JavaScript. It utilizes an API provided by OpenWeatherMap to retrieve real-time weather data. Additionally, the app is designed to be responsive, ensuring optimal user experience across various devices.  </p>
+          <a href="#">learn more</a>
+        </div>
+      <div>
+        <h2>Tic Tac Toe</h2>
+        <p>Created a tic-tac-toe game using HTML, CSS, and JavaScript. Implemented the game logic to allow two players to take turns and determine the winner.Used CSS to style the game board, X and O symbols,
+          and game messages.- Utilized JavaScript functions and event listeners to enable user interactions.
+          </p>
+        <a href="#">learn more</a>
+        </div>
+      <div>
+        <h2>Shopping App</h2>
+        <p> Created a Shopping app using DBMS to store and manage product product information, customer information. Java language is used to make this online Shopping app.<kbd>skqn</kbd> </p>
+        <a href="#">learn more</a>
+      </div>
+    </div>
+  </div>
+ </div>
+  <div id="contact">
+    <h1>CONTACT US</h1>
+  </div>
+  
+<section class="sign-up-form">
+    <h1>Sign Up Now</h1>
+      <form >
+
+     <input type="text" id="name" class="input-box" placeholder="Your Name..."><br>
+     <input type="email" id="email" class="input-box" placeholder="Your Email...">
+     <p><span><input type="checkbox"></span> I agree to the terms of services</p>
+     <button type="button" id="sign-btn">Sign up</button>
+     <hr>
+     <p class="or">Or</p>
+     <button type="button" id="google-btn"><a href="google.com">Login with Google</a></button>
+     <p>Do have an account ? <a href="#">Sign in</a></p>
+    </form>
+    </section>
+    
+    <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>S</span>hikha <span>J</span>aiswal</h1>
+      </div>
+      <h2>Your Complete Web Solution</h2>
+    <div class="connect"> 
+    <div class="mail"><img src="gmail.png"/>
+      <h3>shikhajaiswal275305@gmail.com</h3>
+    </div>
+    <div class="phn"><img src="phone.png"/>
+      <h3>+916307706270</h3>
+    </div>
+    </div>
+    
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://instagram.com/shikha_732?igshid=ZDc4ODBmNjlmNQ==" target="_blank"><img src ="mypng/instagram.png" style="height: 100px;"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://github.com/shikha-sj02" target="_blank"><img src="mypng/github.png" style="height: 100px;"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.linkedin.com/in/shikha-jaiswal-1b350a257" target="_blank"><img src="mypng/linkedin.png" style="height: 100px;"/></a>
+        </div>
+      </div>
+      <p>Copyright © 2023 Shikha. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+
+  </body>
+</html>
